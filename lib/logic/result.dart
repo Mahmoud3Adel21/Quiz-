@@ -26,14 +26,17 @@ class Result extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(resultPhrase,
-            style: TextStyle(
-                fontSize: 50,
-                color: b,
-                shadows: [
-                  Shadow(color: g, offset: const Offset(5, 5), blurRadius: 1)
-                ],
-                fontWeight: FontWeight.bold)),
+        Text(
+          resultPhrase,
+          style: TextStyle(
+              fontSize: 50,
+              color: b,
+              shadows: [
+                Shadow(color: g, offset: const Offset(5, 5), blurRadius: 1)
+              ],
+              fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center,
+        ),
         TextButton(
             onPressed: q,
             child: Text(
